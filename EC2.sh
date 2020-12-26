@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MAIN_MENU=('LISTAR' 'CRIAR' 'EXCLUIR' 'MAIN_MENU')
+#MAIN_MENU=('LISTAR' 'CRIAR' 'EXCLUIR' 'MAIN_MENU')
 function menu()
 {
 	X=0
@@ -31,7 +31,7 @@ function menu()
 	#eval menu "\${${MAIN_MENU[$((CHOICE-1))]}[@]}"
 	#menu eval $var
 }
-MAIN_MENU=LISTAR CRIAR EXCLUIR MAIN_MENU
+menu LISTAR CRIAR EXCLUIR MAIN_MENU
 case $CHOICE in
  1) aws ec2 describe-instances | grep "Value";;
 esac
