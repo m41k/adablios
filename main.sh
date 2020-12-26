@@ -18,4 +18,4 @@ read
 
 clear
 
-bash <( wget -qO- https://raw.githubusercontent.com/m41k/adablios/main/fmenu.sh)
+bash <( wget -qO- https://raw.githubusercontent.com/m41k/adablios/main/mmenu.sh)
