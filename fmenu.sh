@@ -34,5 +34,5 @@ function menu()
 	#eval menu "\${${MAIN_MENU[$((CHOICE-1))]}[@]}"
 	#menu eval $var
 }
-menu 'EC2' 'S3' 'RDS' 'OUTROS'
-bash <( wget -qO- https://raw.githubusercontent.com/m41k/adablios/main/${MENU[$((CHOICE-1))]}.sh)
+#menu 'EC2' 'S3' 'RDS' 'OUTROS'
+#bash <( wget -qO- https://raw.githubusercontent.com/m41k/adablios/main/${MENU[$((CHOICE-1))]}.sh)
