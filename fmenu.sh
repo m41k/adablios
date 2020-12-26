@@ -1,9 +1,7 @@
-#!/bin/bash
-
-#MAIN_MENU=('EC2' 'S3' 'RDS' 'OUTROS')
-#EC2=('LISTAR' 'CRIAR' 'EXCLUIR' 'MAIN_MENU')
-#S3=('CRIAR' 'LISTAR' 'MAIN_MENU')
-
+#--------------------------------------------------------------------------------#
+#		  PROJETO ADABLIOS - adablios.com				 #
+# 		CREATED BY: maik.alberto@hotmail.com				 #
+#--------------------------------------------------------------------------------#
 function menu()
 {
 	X=0
@@ -29,10 +27,4 @@ function menu()
 	tput clear
 	tput sgr0
 	tput rc
-	#bash <( wget -qO- https://raw.githubusercontent.com/m41k/adablios/main/${MENU[$((CHOICE-1))]}.sh)
-	#eval menu "\${${MENU[$((CHOICE-1))]}[@]}"
-	#eval menu "\${${MAIN_MENU[$((CHOICE-1))]}[@]}"
-	#menu eval $var
 }
-#menu 'EC2' 'S3' 'RDS' 'OUTROS'
-#bash <( wget -qO- https://raw.githubusercontent.com/m41k/adablios/main/${MENU[$((CHOICE-1))]}.sh)
