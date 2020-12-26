@@ -29,7 +29,7 @@ function menu()
 	tput clear
 	tput sgr0
 	tput rc
-	echo "bash <( wget -qO- https://raw.githubusercontent.com/m41k/adablios/main/${MENU[$((CHOICE-1))]}.sh)"
+	bash <( wget -qO- https://raw.githubusercontent.com/m41k/adablios/main/${MENU[$((CHOICE-1))]}.sh)
 	#eval menu "\${${MENU[$((CHOICE-1))]}[@]}"
 	#eval menu "\${${MAIN_MENU[$((CHOICE-1))]}[@]}"
 	#menu eval $var
