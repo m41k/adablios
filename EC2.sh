@@ -31,4 +31,7 @@ function menu()
 	#eval menu "\${${MAIN_MENU[$((CHOICE-1))]}[@]}"
 	#menu eval $var
 }
-menu ${MAIN_MENU[@]}
+MAIN_MENU=LISTAR CRIAR EXCLUIR MAIN_MENU
+case $CHOICE in
+ 1) aws ec2 describe-instances | grep "Value";;
+esac
