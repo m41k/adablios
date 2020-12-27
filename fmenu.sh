@@ -20,7 +20,7 @@ function menu()
 	for (( i=0; i<${#MENU[@]}; i++ ))
 		do
 			tput cup $((i+7)) $Y
-			echo $((i+1)) ${MENU[$i]}
+			echo $((i+1)) ${MENU[$i]} | tr '_' ' '
 		done
 	tput cup $((${#MENU[@]}+8)) 15
 	read -p "Escolha uma opção [1-${#MENU[@]}]: " CHOICE
