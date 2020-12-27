@@ -3,7 +3,7 @@
 # 		CREATED BY: maik.alberto@hotmail.com				 #
 #--------------------------------------------------------------------------------#
 source /tmp/fmenu.sh
-menu VERIFICAR DISPONIBILIDADE DOMINIO
+menu VERIFICAR_DISPONIBILIDADE_DOMINIO
 case $CHOICE in
  1) 
   read "Digite o domínio: " DOMAIN
