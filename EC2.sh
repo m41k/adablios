@@ -10,6 +10,6 @@ case $CHOICE in
     read -p "Size(Gb): " SIZE
     read -p "Type(gp2): " TYPE
     aws ec2 create-volume --availability-zone $ZONE --size $SIZE --volume-type $TYPE ;;
- 3) aws ec2 describe-secutiry-groups ;;
- 4) bash <( wget -qO- https://raw.githubusercontent.com/m41k/adablios/main/main.sh) ;;
+ 3) aws ec2 describe-security-groups ;;
+ 4) bash <( wget -qO- https://raw.githubusercontent.com/m41k/adablios/main/cli.sh) ;;
 esac
