@@ -6,7 +6,7 @@ source /tmp/fmenu.sh
 menu CRIAR_INSTÂNCIA LISTAR_INSTÂNCIAS CRIAR_VOLUME LISTAR_SECURITY_GROUPS MAIN_MENU
 case $CHOICE in
  1) read -p "ID da imagem(...): " IMGID
-    read -p "Tipo da insância(t2.micro): " SIZE
+    read -p "Tipo da insância(t2.micro): " INSTYP
     read -p "Região(us-east-1): " REGION
     read -p "Quantidade(1): " COUNT
     read -p "Chave de acesso(sua key): " KEYNAME
