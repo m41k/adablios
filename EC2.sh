@@ -12,7 +12,7 @@ case $CHOICE in
     read -p "Chave de acesso(sua key): " KEYNAME
     read -p "Grupo de segurança(): " SGROUPID
     read -p "Subnet ID(): " SNETID
-    aws ec2 run-instances --image-id $IMGID --instance-type $INSTYP --region $REGION --count $COUNT --key-name $KEYNAME --security-group-ids $SGROUPID --subnet-id $SNETID
+    aws ec2 run-instances --image-id $IMGID --instance-type $INSTYP --region $REGION --count $COUNT --key-name $KEYNAME --security-group-ids $SGROUPID --subnet-id $SNETID ;;
  2) aws ec2 describe-instances --output table ;;
  3) read -p "Zone(us-east-1d): " ZONE
     read -p "Size(Gb): " SIZE
